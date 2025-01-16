@@ -1,0 +1,44 @@
+body {
+    background-color: pink;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+li {
+    font-size: 22px;
+    list-style-type: none;
+}
+
+a {
+    color: #fc0366;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f2303a;
+    text-decoration: underline;
+}
+
+/*
+
+.assignment {
+    color: #f2303a;
+    text-decoration: underline;
+} 
+- for class-specific style changes
+
+#lastOne {
+    font-size: 40px;
+} 
+- for ID-specific style changes 
+
+*/
