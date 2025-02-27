@@ -64,30 +64,46 @@ scene.add(cave);
 
 //OBJECTS
 
-const sphere1Geo = new THREE.SphereGeometry(0.75); 
-const sphere1Mat = new THREE.MeshNormalMaterial(); 
+const bodyGeo = new THREE.CylinderGeometry(1, 1, 3, 32); 
+const bodyMat = new THREE.MeshBasicMaterial( {color: 0xffff00} ); 
+const body = new THREE.Mesh(bodyGeo, bodyMat); 
 
-const sphere1 = new THREE.Mesh(sphere1Geo, sphere1Mat);
-sphere1.position.set(6, 2.8, 2.5)
-sphere1.castShadow = true
-scene.add(sphere1);
+body.castShadow = true
+body.position.set (6, 0.5, 0)
+body.rotation.x = Math.PI * 0.5
+scene.add(body);
 
-const sphere2Geo = new THREE.SphereGeometry(0.75); 
-const sphere2Mat = new THREE.MeshNormalMaterial(); 
+const headGeo = new THREE.SphereGeometry(1, 32, 16); 
+const headMat = new THREE.MeshBasicMaterial( { color: 0xffff00 } ); 
+const head = new THREE.Mesh(headGeo, headMat); 
 
-const sphere2 = new THREE.Mesh(sphere2Geo, sphere2Mat);
-sphere2.position.set(6, 2.8, -2.5)
-sphere2.castShadow = true
-scene.add(sphere2);
+head.castShadow = true
+head.position.set (4, 1, 2)
+scene.add(head);
 
-const torusGeo = new THREE.TorusGeometry(0.8, 0.4, 4, 100); 
-const torusMat = new THREE.MeshNormalMaterial();
+const leg1Geo = new THREE.CylinderGeometry(0.3, 0.3, 2, 32); 
+const leg1Mat = new THREE.MeshBasicMaterial( {color: 0xffff00} ); 
+const leg1 = new THREE.Mesh(leg1Geo, leg1Mat); 
 
-const torus = new THREE.Mesh(torusGeo, torusMat)
-torus.position.set(6, 0.3, 0)
-torus.rotation.y = Math.PI * 0.5
-torus.castShadow = true
-scene.add( torus )
+leg1.castShadow = true
+leg1.position.set (7, -0.6, -1)
+scene.add(leg1);
+
+const leg2Geo = new THREE.CylinderGeometry(0.3, 0.3, 2, 32); 
+const leg2Mat = new THREE.MeshBasicMaterial( {color: 0xffff00} ); 
+const leg2 = new THREE.Mesh(leg2Geo, leg2Mat); 
+
+leg2.castShadow = true
+leg2.position.set (8, -0.6, 1)
+scene.add(leg2);
+
+const earGeo = new THREE.ConeGeometry(0.3, 0.6, 32); 
+const earMat = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+const ear = new THREE.Mesh(earGeo, earMat); 
+
+ear.castShadow = true
+ear.position.set (4, 2.2, 2)
+scene.add(ear);
 
 //LIGHTS
 
@@ -142,6 +158,7 @@ const animation = () =>
 
     //animate objects
     //sphere1.rotation.y = elapsedTime
+    directionalLight.position.y = Math.sin(elapsedTime)
 
     //Update Directional Light Helper
     directionalLightHelper.update()
