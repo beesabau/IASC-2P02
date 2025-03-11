@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+        <title>Assignment 1</title>
+
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+        
+<!--three.js import map-->
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://ga.jspm.io/npm:three@0.172.0/build/three.module.js",
+        "OrbitControls": "https://ga.jspm.io/npm:three@0.172.0/examples/jsm/controls/OrbitControls.js",
+        "lil-gui": "https://ga.jspm.io/npm:lil-gui@0.20.0/dist/lil-gui.esm.js"
+
+      }
+    }
+    </script>
+
+    <!--three.js scene link-->
+    <script src="script.js" type=module></script>
+
+    </head>
+
+    <body>
+        <div class="flexbox">
+          <!-- essay -->
+          <div class="essay">
+          <h2>1. Flatness</h2>
+          <p><span class="clickable" id="part-one">From inside the cave...</span></p>
+
+            <p>Shadows often seem alive in the night, when one is alone and their reason wanders. After a certain point, those living shadows begin to feel like company. The cave dwellers had grown accustomed to the face by now. It watched them silently, smiling — in approval? It took an uncertain, as the dwellers had no outside concept of time, but presumably great while before it <span class="clickable" id="first-change">began moving</span>. What had been a permanent smile now rotated. The dwellers lacked the knowledge of its cause, but were convinced of its power. When the face smiled, they believed it bestowed its blessing. When it frowned, they perceived it as a danger and as punishment. The dwellers soon began to develop rituals to appease the face, believing that their survival depended on its favour. One day, (or perhaps night? They certainly did not know.), as the dwellers stared at their patron? God?, <span class="clickable" id="second-change">its eyes widened</span>. A new expression. A new message? Were they meant to understand? It had been watching them the entire time, they thought. This must have meant that the face grew more critical, that perhaps one of them had done something wrong and brought on its harsher judgement. They were not doing enough to satisfy it, clearly.</span></p>
+
+            <p>The idea of “flatness,” as per Sousanis's Unflattening, is a way of seeing the world that is minimal, controlled, and reduced. Those who exist in “flatness” do not see beyond their immediate surroundings. Their reality is built for them, and they simply accept it. In the context of the cave dwellers, “flatness” is represented in their limited understanding of the shadow face and its expressions. They believe that the face controls their fate, and that their survival depends on placating it. Their thoughts and actions revolve around the face; it is all they know, and that traps them in a meaningless cycle. This narrowing of their lives’ purposes prevents the dwellers from realizing that their survival and their future are not in the hands of the face. They are bound by the constraints of a world that has been designed for them by both their environment (i.e., the face) and their own inability to imagine anything beyond what they’ve always known. This leaves the dwellers in a state of passive acceptance.</p>
+
+          <h2>2. Seeing Double</h2>
+          <p><span class="clickable" id="part-two">From outside the cave...</span></p>
+
+            <p>Third paragraph goes here. <span class="clickable" id="third-change">Third change goes here</span>. <span class="clickable" id="fourth-change">Fourth change goes here</span>.</span></p>
+
+            <p>The idea of “seeing double,” on the other hand, is the act of viewing something from multiple perspectives and recognizing that the truth of an idea or situation cannot be fully grasped by only looking at it from one single, fixed view. As stated in class, “the truth emerges by combining different views.” In the case of the cave dwellers, their limited, 2D perspective on the face keeps them trapped in a simple understanding of it. They perceive it as an all-powerful entity, but outside the cave, the face is revealed for what it truly is: just a collection of 3D objects with no inherent meaning attached to them. Only by seeing it from different angles and understanding its form as something detached from the idea of the divine can the dwellers — or anyone, really — grasp what it actually is.</p>
+          </div>
+
+          <!-- scene -->
+          <div class="scene">
+            <canvas class="webgl"></canvas>
+          </div>
+
+      </div>
+    </body>
+
+</html>
