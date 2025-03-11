@@ -156,32 +156,27 @@ const domObject = {
 //part-one
 document.querySelector('#part-one').onclick = function() {
     domObject.part = 1
-    domObject.fourthChange = false
 }
 
 //part-two
 document.querySelector('#part-two').onclick = function() {
     domObject.part = 2
-    domObject.fourthChange = false
 }
 
 //first-change
 document.querySelector('#first-change').onclick = function() {
     domObject.firstChange = true
-    domObject.fourthChange = false
 }
 
 //second-change
 document.querySelector('#second-change').onclick = function() {
     domObject.secondChange = true
-    domObject.fourthChange = false
 }
 
 //third-change
 document.querySelector('#third-change').onclick = function() {
     domObject.thirdChange = true
     domObject.firstChange = false
-    domObject.fourthChange = false
 }
 
 //fourth-change
