@@ -1,8 +1,12 @@
-h1{
+h1 {
  font-size: 48px;
  text-align: center;
- color: #ffffff;
 }
+
+h2{
+    font-size: 30px;
+    text-align: center;
+   }
 
 .webgl {
     position: absolute;
